@@ -24,7 +24,7 @@ export default function CollectSetup({
   return (
     <div className="screen flow-screen">
       <div className="flow-heading">
-        <span className="eyebrow">{en ? "New collection" : "Nueva recolección"}</span>
+        <span className="eyebrow">{en ? "Collect" : "Recolectar"}</span>
         <h2>{en ? "Organization" : "Organización"}</h2>
       </div>
 

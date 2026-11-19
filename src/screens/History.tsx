@@ -118,7 +118,7 @@ export default function HistoryScreen({
   return (
     <div className="screen flow-screen history-screen">
       <div className="flow-heading">
-        <span className="eyebrow">{en ? "Edit past classification" : "Editar clasificación pasada"}</span>
+        <span className="eyebrow">{en ? "History" : "Historial"}</span>
         <h2>{en ? "History" : "Historial"}</h2>
         <p>{en ? "Review or edit previous work" : "Revisa o edita trabajos anteriores"}</p>
       </div>

@@ -2416,3 +2416,20 @@ a:focus-visible {
     transform: translate3d(0, -16px, 0);
   }
 }
+
+.review-actions > button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  padding-inline: 18px;
+  text-align: center;
+  line-height: 1.1;
+}
+
+/* Keeps the "+" its own size so it never gets squeezed against the border */
+.review-actions > button > span[aria-hidden="true"] {
+  flex: 0 0 auto;
+  font-size: 1.3em;
+  line-height: 1;
+}

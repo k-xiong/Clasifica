@@ -23,7 +23,7 @@ export default function ClassifySetup({
   return (
     <div className="screen flow-screen">
       <div className="flow-heading">
-        <span className="eyebrow">{en ? "New classification" : "Nueva clasificación"}</span>
+        <span className="eyebrow">{en ? "Classify" : "Clasificar"}</span>
         <h2>{en ? "Organization" : "Organización"}</h2>
       </div>
 
