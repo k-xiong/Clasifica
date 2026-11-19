@@ -26,7 +26,7 @@ export default function ClassifyCategories({
         <span className="eyebrow">
           {draft.organization.toUpperCase()} · {draft.location}
         </span>
-        <h2>{en ? "What material?" : "¿Qué material?"}</h2>
+        <h2>{en ? "Classify" : "Clasificar"}</h2>
       </div>
 
       <button type="button" className="collect-voice-guide" onClick={onHearOptions}>

@@ -29,9 +29,9 @@ export default function ClassifyMaterial({
           <CategoryIcon category={category} />
         </span>
         <span className="eyebrow material-type-eyebrow">
-          {en ? "Classify" : "Clasificar"}
+          {en ? cat.en : cat.es}
         </span>
-        <h2>{en ? cat.en : cat.es}</h2>
+        <h2>{en ? "Classify" : "Clasificar"}</h2>
       </div>
 
       <button type="button" className="collect-voice-guide" onClick={onHearOptions}>

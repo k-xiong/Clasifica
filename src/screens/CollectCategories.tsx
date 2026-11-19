@@ -30,7 +30,7 @@ export default function CollectCategories({
         <span className="eyebrow">
           {orgName} · {draft.location}
         </span>
-        <h2>{en ? "What material?" : "¿Qué material?"}</h2>
+        <h2>{en ? "Collect" : "Recolectar"}</h2>
       </div>
 
       <button type="button" className="collect-voice-guide" onClick={onHearOptions}>

@@ -22,8 +22,8 @@ export default function EvidenceSetup({
   return (
     <div className="screen flow-screen evidence-setup-screen">
       <div className="flow-heading">
-        <span className="eyebrow">{en ? "Evidence" : "Evidencia"}</span>
-        <h2>{en ? "Record" : "Registrar"}</h2>
+        <span className="eyebrow">{en ? "Record" : "Registrar"}</span>
+        <h2>{en ? "Evidence" : "Evidencia"}</h2>
         <p>{en ? "Choose where the evidence was taken" : "Elige dónde se tomó la evidencia"}</p>
       </div>
 

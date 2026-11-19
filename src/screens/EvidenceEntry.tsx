@@ -35,7 +35,7 @@ export default function EvidenceEntry({
         <span className="eyebrow">
           {organizations.find((o) => o.id === draft.organization)?.name} · {draft.location}
         </span>
-        <h2>{en ? "Add evidence" : "Agregar evidencia"}</h2>
+        <h2>{en ? "Evidence" : "Evidencia"}</h2>
         <p>{en ? "Take up to four clear photos" : "Toma hasta cuatro fotos claras"}</p>
       </div>
 
