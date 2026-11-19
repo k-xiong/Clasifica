@@ -1,10 +1,10 @@
 import { categories, copy, materialOptions, type CategoryId, type Language, type Screen } from "./data";
 import { materialLabel } from "./materials";
 
-type Text = { EN: string; ES: string };
+type Translated = { EN: string; ES: string };
 
 /** What the top-right speaker button reads on each page: what the user needs to do or fill out. */
-const pageText: Partial<Record<Screen, Text>> = {
+const pageText: Partial<Record<Screen, Translated>> = {
   "sign-in": {
     EN: "Tap Sign in to start.",
     ES: "Toque Iniciar sesión para comenzar.",
@@ -70,7 +70,7 @@ export function pageInstructions(screen: Screen, language: Language): string {
 }
 
 /** Spoken "learn more" summary for each dashboard feature, in dashboard order. */
-const featureText: Text[] = [
+const featureText: Translated[] = [
   {
     EN: "Collect. Use this when you pick up bags of materials. Choose the organization and the location, add each bag with its type of material and its weight, and tap Send at the end.",
     ES: "Recolectar. Use esta opción cuando recoja bolsas de materiales. Elija la organización y la ubicación, agregue cada bolsa con su tipo de material y su peso, y toque Enviar al final.",
