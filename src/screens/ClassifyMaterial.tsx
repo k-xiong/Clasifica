@@ -40,8 +40,11 @@ export default function ClassifyMaterial({
       </button>
 
       <div className="material-list">
-        {materialOptions[category].map((material, index) => {
+        {materialOptions[category].map((material, index, all) => {
           const selected = material in weights;
+          // Spread the shades from the category's full color to a lighter tint.
+          const lighten = all.length > 1 ? (index / (all.length - 1)) * 45 : 0;
+          const shade = `color-mix(in srgb, ${cat.color} ${100 - lighten}%, white)`;
           return (
             <div className="material-row" key={material}>
               <button
@@ -50,14 +53,13 @@ export default function ClassifyMaterial({
                 onClick={() => onPickMaterial(material)}
                 aria-pressed={selected}
               >
-                <span
-                  className="material-picture"
-                  style={{ "--item-hue": `${(index * 43 + 150) % 360}` } as React.CSSProperties}
-                >
+                <span className="material-picture" style={{ background: shade }}>
                   <CategoryIcon category={category} />
-                  <i>{index + 1}</i>
                 </span>
-                <strong>{materialLabel(material, language)}</strong>
+                <span className="numbered-label">
+                  <small>{index + 1}</small>
+                  <strong>{materialLabel(material, language)}</strong>
+                </span>
                 {selected && <span className="weight-badge">{weights[material]} kg</span>}
               </button>
             </div>
