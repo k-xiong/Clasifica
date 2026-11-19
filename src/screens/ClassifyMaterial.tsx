@@ -29,7 +29,7 @@ export default function ClassifyMaterial({
           <CategoryIcon category={category} />
         </span>
         <span className="eyebrow material-type-eyebrow">
-          {en ? "Type of material" : "Tipo de material"}
+          {en ? "Classify" : "Clasificar"}
         </span>
         <h2>{en ? cat.en : cat.es}</h2>
       </div>
